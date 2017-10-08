@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="description" content="JS assignment drills">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+  <script>
+  var numVar=10;
+
+var num2Var=20;
+
+
+var stringVar='hello';
+
+
+var string2Var='goodbye';
+
+var nullVar=null;
+
+var floatVar=2.1;
+
+var undefinedVar;
+
+//add numVar and num2Var together
+var q1;
+
+//add stringVar and string2Var together (this is called concatenation because a string is involved)
+var q2;
+
+//add numVar and stringVar together
+var q3;
+
+//concatenate numVar, num2Var, and stringVar together
+var q4;
+
+//concatenate numVar, string2Var and num2Var together
+var q5;
+
+//add num2Var to floatVar
+var q6;
+
+//add numVar to undefinedVar
+var q7;
+
+//add num2Var to nullVar
+var q8;
+
+//add num2Var, floatVar, and numVar
+var q9;
+
+//add stringVar to undefinedVar
+var q10;
+
+//add stringVar to nullVar
+var q11;
+
+//make a new variable.  add floatVar and numVar together and assign the result to it
+//make another variable.  add numVar and num2Var together and assign them to it
+//add the two variables together
+var q12;
+
+//assign the value of numVar to q13.
+var q13;
+
+//assign the value of numVar to q14.
+//take the value inside q14, and add 1 to it with '+ 1'
+var q14;
+
+//assign the value of numVar to q15.
+//take the value inside q15, and add 1 to it with '++' added onto the end. Do this instead of the = sign.
+var q15;
+
+//assign the value of numVar to q16.
+//take the value inside q16, and add 1 to it with '+=1' added onto the end.  Do this instead of the = sign.
+var q16;
+
+//assign the value of numVar to q17.
+//take the value inside q17, and subtract 1 from it with '--' added onto the end.  Do this instead of the = sign.
+var q17;
+
+//assign the value of numVar to q18.
+//take the value inside q18, and subtract 1 from it with '-=1' added onto the end.  Do this instead of the = sign.
+var q18;
+
+//assign the value of numVar to q19.
+//take the value inside q19, and subtract 5 from it with '-=5' added onto the end.  Do this instead of the = sign.
+var q19;
+
+
+//END OF CODE YOU NEED TO WORK ON//
+
+function testValues(){
+  var answer_keys = {"q1":30,"q2":"hellogoodbye","q3":"10hello","q4":'30hello',"q5":"10goodbye20","q6":22.1,"q7":'NaN',"q8":20,"q9":32.1,"q10":"helloundefined","q11":"hellonull","q12":42.1,"q13":10,"q14":11,"q15":11,"q16":11,"q17":9,"q18":9,"q19":5};
+  var answer = {};
+  for(var i=1; i<20; i++){
+    //console.log('q'+i+' : '+window['q'+i]);
+    answer['q'+i]=window['q'+i];
+    var q = 'q'+i;
+    var a = window['q'+i];
+    if(answer_keys[q]===a ||  answer_keys[q]=='NaN' && isNaN(a)){
+      console.log('q'+i+': value = '+a+ '--- correct');
+    } else{
+      console.error('q'+i+': your value = '+a+ ' correct value: '+answer_keys[q]+'--- INCORRECT');
+    }
+    
+  }
+}
+testValues();
+  
+  </script>
+</head>
+<body>
+
+</body>
+</html>
