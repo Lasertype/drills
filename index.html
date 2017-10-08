@@ -6,138 +6,246 @@
   <meta name="viewport" content="width=device-width">
   <title>JS Bin</title>
   <script>
-var n1 = 1;
-var n2 = 5;
-var n3 = '5';
-var n4 = null;
-var n5;
-var n6 = -10;
-var n7 = 'hello';
-var n8 = 1;
-var n9 = '25';
-var n10 = 'tuesday';
-var n11 = 'wednesday';
-var your_answer = false;
-var your_reply = true;
-//IN THE CONDITIONALS BELOW, change your_answer / your_reply to the answer that will make the answer correct, then click "run" on the jsbin console
+var num1 = 5;
+var num2 = 12;
+var num3 = -4;
+var num4 = 0;
+var string1 = 'hello';
+var string2 = 'bye';
+var string3 = '52';
 
-//make a conditional that checks if n1 is less than n2 
-if(your_answer){
-  q1=true;
+//TO TEST YOUR CODE: open the JSBIN CONSOLE and click "RUN"
+//EXAMPLE: create a function that takes a parameter, num3, and returns that parameter
+function qExample(num3){
+  return num3;
 }
 
-//make a conditional that checks if n1 is equal to n8
-if(your_answer){
-  q2=true;
+//create function that takes in one parameter, a number, and returns that number multiplied by -1;
+
+function q1(){
+
 }
 
-//make a conditional that checks if n2 and n3 have the same value
-if(your_answer){
-  q3=true;
+//create a function that takes in 2 numbers, adds them together, and returns the result
+
+function q2(){
+  
 }
 
-//make a conditional that checks if n2 and n3 have the same value and the same data type
-if(your_reply){
-  q4=true;
-}
-else{
-  q4=false;
+//create a function that takes in a number.  If it is greater or equal to 0, return the boolean true.  If it is less than 0, return the boolean false
+
+function q3(){
+  
 }
 
-//make a conditional that checks if n1 is less than n2 
-if(your_answer){
-  q5=true;
+//create a function that takes a string parameter.  It sets the div that has ID q4_answer to have the text equal to the string.  It has no return value. 
+
+function q4(){
+  
 }
 
+//create a function that takes a string parameter. It concatenantes the string literal "hello " (note the space) NOT THE VARIABLE, to the beginning of the string parameter.
+//it then sets the div with class q5_answer to have text equal to the concatenated string.  It also returns that concatenated string
 
-//make a conditional that checks if n3 is greater than n4
-if(your_answer){
-  q6=true;
+function q5(){
+  
 }
 
-//make a conditional that checks if n4 is equal to n5
-if(your_answer){
-  q7=true;
+//create a funtion that takes 3 number parameters.  It multiplies the first 2 numbers, and divides that result by the 3rd number.  It returns the result
+function q6(){
+  
 }
 
-//make a conditional that checks if n1 is greater than n5
-if(your_reply){
-  q8=true;
-}
-else{
-  q8=false;
+//create a function that takes in 2 strings.  It contatenates the 2 strings together with a SPACE between them.  It returns the result
+function q7(){
+  
 }
 
-//make a conditional that checks if n3 > n9
-if(your_answer){
-  q9=true;
+//create a function that takes in 2 strings.  If the first string is longer than the second, it returns true.  If the second string is longer, it returns false;
+
+function q8(){
+  
 }
 
-//make a conditional that checks if n7 is greater than n9
-if(your_answer){
-  q10=true;
+//create a function takes in an unknown parameter.  If the parameter is a string datatype, it returns false.  If it is a number datatype, it returns true.
+
+function q9(){
+  
 }
 
-//make a conditional that checks the following:
-if(your_answer){  //check if n6 is less than or equal to 18
-  q11 = 1;//if n6 is less than less than or equal to 18, q11 = 1
-} 
-else if(your_answer){//check if n6 is less than 13
-  q11 = 2;//if n6 is less than 13, q11 = 2
-}
-else if(your_answer){ //check if n6 is less than 0
-  q11 = 3; //if n6 is less than 0, q11 = 3
-}
-else { //if n6 is greater than 18
-  q11 = 4; //if n6 is greater than 18, q11 =4
-}
-//also organize the above if statements to make the if statement work properly.  Make sure to keep the "q11 = " part of the code matched up with the appropriate conditional
+//create a function that takes in an unknown parameter.  
+//If it is a number, return the number.  
+//If it is a number in a string, parse it and return the number (check out isNaN()). 
+//If it is string that is not a number, return false
 
+function q10(){
 
-//create a switch statement that does the following: 
-/*sets q12 to 0 if n10 is 'sunday',
-sets q12 to 1 if n10 is 'monday',
-sets q12 to 2 if n10 is 'tuesday',
-sets q12 to 3 if n10 is 'wednesday',
-sets q12 to 4 if n10 is 'thursday',
-sets q12 to 5 if n10 is 'friday',
-sets q12 to 6 if n10 is 'saturday',
-*/
-
-//create a switch statement that does the following: 
-/*sets q13 to 0 if n11 is 'sunday' or 'saturday',
-sets q13 to 1 if n11 is 'monday','tuesday','wednesday','thursday', or 'friday', and sets q13 to -1 if it is none of these
-*/
-
-//alter the if statment to check if n3 and n2 are NOT equal in value and data type
-if(your_answer){
-  q14 = true;
 }
+
 
 
 //END OF CODE YOU NEED TO WORK ON//
 
-function testValues(){
-  var answer_keys = {"q1":true,"q2":true,"q3":true,"q4":false,"q5":true,"q6":true,"q7":true,"q8":false,"q9":true,"q10":true,"q11":3,"q12":2,"q13":1,"q14":true};
-  var answer = {};
-  for(var i=1; i<15; i++){
-    //console.log('q'+i+' : '+window['q'+i]);
-    answer['q'+i]=window['q'+i];
-    var q = 'q'+i;
-    var a = window['q'+i];
-    if(answer_keys[q]===a ||  answer_keys[q]=='NaN' && isNaN(a)){
-      console.log('q'+i+': value = '+a+ '--- correct');
-    } else{
-      console.error('q'+i+': your value = '+a+ ' correct value: '+answer_keys[q]+'--- INCORRECT');
-    }
+
+
+function testValues(num1, num2, num3, num4, string1, string2, string3){
+  var answer_keys = {
+    'q1':[
+      {
+        'parameters': [num3], 
+        'result': 4
+      },
+      {
+        'parameters': [num1], 
+        'result': -5
+      },      
+    ],
+    'q2':[
+      {
+        'parameters': [num1,num2], 
+        'result': 17
+      },
+      {
+        'parameters': [num3,num4], 
+        'result': -4
+      },      
+    ],
+    'q3':[
+      {
+        'parameters': [num1], 
+        'result': true
+      },
+      {
+        'parameters': [num3], 
+        'result': false
+      },      
+    ],
+    'q4':[
+      {
+        'parameters': [string1], 
+        'result': undefined,
+        'check': {key:"$('#q4_answer').text()", value: 'hello'}
+      },
+      {
+        'parameters': [string2], 
+        'result': undefined,
+        'check': {key:"$('#q4_answer').text()", value: 'bye'}
+      },      
+    ],
+    'q5':[
+      {
+        'parameters': [string1], 
+        'result': 'hello hello',
+        'check': {key:"$('.q5_answer').text()", value: 'hello hello'}
+      },
+      {
+        'parameters': [string2], 
+        'result': 'hello bye',
+        'check': {key:"$('.q5_answer').text()", value: 'hello bye'}
+      },      
+    ],
+    'q6':[
+      {
+        'parameters': [num1,num2,num3], 
+        'result': -15
+      },
+      {
+        'parameters': [num3,num1,num2], 
+        'result': -1.6666666666666667
+      },      
+    ],
+    'q7':[
+      {
+        'parameters': [string1,string2], 
+        'result': 'hello bye'
+      },
+      {
+        'parameters': [string1,string3], 
+        'result': 'hello 52'
+      },      
+    ],
+    'q8':[
+      {
+        'parameters': [string2, string1], 
+        'result': false
+      },
+      {
+        'parameters': [string2, string3], 
+        'result': true
+      },      
+    ],
+    'q9':[
+      {
+        'parameters': [string3], 
+        'result': false
+      },
+      {
+        'parameters': [num2], 
+        'result': true
+      },      
+    ],
+    'q10':[
+      {
+        'parameters': [num3], 
+        'result': -4
+      },
+      {
+        'parameters': [string3], 
+        'result': 52
+      },
+      {
+        'parameters': [string2], 
+        'result': false
+      },      
+    ],
+  };
+  for(var i=1; i<=10; i++){
     
-  }
+      var q_id = 'q'+i;
+      var answer_set = answer_keys[q_id];
+      for(var pass=0; pass<answer_set.length; pass++){
+        var answer = answer_set[pass];
+        var params = answer.parameters;
+        var func = window[q_id];
+        if(typeof func){
+          var result =func.apply(null, params);
+          var correct_result = answer.result;
+          console.log('#=============Question '+i+ '=============#');
+          console.log('#-------------Q'+i+' test '+(pass+1)+'---------------#');
+          if(result===correct_result){
+            console.log('---params: '+params,
+                        '---result: '+result,
+                        '---CORRECT');
+          } else{
+            console.error('---params: '+params);
+            console.error('---your result: '+result);
+            console.error('---correct result: '+correct_result);
+            console.error('---INCORRECT');
+          }
+          if(typeof answer.check != 'undefined'){
+            var target_answer = eval(answer.check.key);
+            if(target_answer==answer.check.value){
+              console.log('---Task: successful');
+              console.log(answer.check.key + " is '"+answer.check.value+"'");
+            }
+            else{
+              console.error('---Task: failure');
+              console.error(answer.check.key + " should be  '"+answer.check.value + "' but is '"+target_answer+"'");
+            }
+          }
+        }
+        else{
+          console.error('---question'+q_id,
+                      '------ not defined');
+        }
+      }//end of pass for loop
+  }//end of q for loop
 }
-testValues();
-  
+
   </script>
 </head>
-<body>
-
+<body onload="testValues(num1, num2, num3, num4, string1, string2, string3);">
+  <div id="q4_answer"></div>
+  <div class="q5_answer"></div>
 </body>
 </html>
